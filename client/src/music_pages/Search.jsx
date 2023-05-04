@@ -10,7 +10,7 @@ const Search = ({setRoute}) => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetSongsBySearchQuery(searchTerm);
 
-  console.log(data);
+  // console.log(data);
   // const songs = data?.map((song) => song.track);
 
 

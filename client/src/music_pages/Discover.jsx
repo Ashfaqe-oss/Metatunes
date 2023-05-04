@@ -11,7 +11,7 @@ const Discover = ({setRoute, data, isFetching, error}) => {
   // const {data, isFetching, error} = useGetTopChartsQuery({country_code});
   const dispatch = useDispatch();
   const {activeSong, isPlaying} = useSelector((state) => state.player);
-  console.log(data);
+  // console.log(data);
 
   if(isFetching) return <Loader title="Loading songs ..." />
   if(error) <Error title="something went wrong. Please try again"/>

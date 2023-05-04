@@ -62,7 +62,7 @@ const MusicPlayer = () => {
   let songKey = currentSongs[currentIndex]?.key;
 
   if(!songKey) {
-    songKey = currentSongs[currentIndex]?.key;
+    songKey = currentSongs[currentIndex]?.track?.key;
   }
 
   // console.log(songKey);
