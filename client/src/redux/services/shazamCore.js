@@ -19,7 +19,7 @@ export const shazamCoreApi = createApi({
     }),
     endpoints: (builder) => ({
         getTopCharts: builder.query({
-            query: () => `/search?q=AR%20Rahman`
+            query: () => `/search?q=Dua%20Lipa`
         }),
         getSongDetails: builder.query({
             query: ({
