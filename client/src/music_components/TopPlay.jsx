@@ -66,7 +66,7 @@ export default function TopPlay({data}) {
                   </Link>
                   {/* <Link to={`/mp/artists/${song?.artists[0].adamid}`}> */}
                     <motion.p className="text-base text-gray-300 mt-1 truncate hover:underline" whileHover={{ scale: 0.98 }}>
-                      {song?.title.length > 25 ? song?.title.slice(0,24) + '..' : song?.title}
+                      {song?.artist?.name.length > 25 ? song?.artist?.name.slice(0,24) + '..' : song?.artist?.name}
                     </motion.p>
                   {/* </Link> */}
                 </div>

@@ -17,11 +17,11 @@ const playerSlice = createSlice({
       state.activeSong = action.payload.song;
 
       if (action.payload?.data?.previews?.hits) {
-        state.currentSongs = action.payload.data.previews.hits;
+        state.currentSongs = action.payload.data.preview;
       } else if (action.payload?.data?.properties) {
-        state.currentSongs = action.payload?.data?.previews;
+        state.currentSongs = action.payload?.data?.preview;
       } else {
-        state.currentSongs = action.payload.data;
+        state.currentSongs = action.payload.data?.preview;
       }
 
       state.currentIndex = action.payload.i;
